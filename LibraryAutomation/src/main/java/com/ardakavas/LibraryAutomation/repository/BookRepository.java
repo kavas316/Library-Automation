@@ -16,6 +16,6 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     @Query("Select b from Book b WHERE b.author.author_id = :author_id")
     List<Book> findBooksByAuthorId(Long author_id);
 
-    List<Book> fndByOrderByPublicationYearAsc();
+   // List<Book> fndByOrderByPublicationYearAsc();
 
 }
